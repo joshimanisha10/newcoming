@@ -1,7 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
+   overflow-x: hidden;
   }
  
  /* banner */ 
@@ -9,7 +10,7 @@ body, html {
 
   
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("nature.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("4.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,58 +26,112 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
   }
-  
-  .hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .hero-text button:hover {
-    background-color: #555;
-    color: white;
-  }
 
 
   /* banner end */ 
 
-    /* Layout1*/ 
-.layout1{
+ /* Layout1*/ 
+.layout1 {
  margin:50px 0px;
  padding: 0px;
 }
+
+.layout1 img{
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ 
   /* Layout1 end*/ 
 
-     /* Layout1*/ 
+  /* Layout2*/ 
 .layout2{
     margin:50px 0px;
     padding: 0px;
    }
-     /* Layout1 end*/ 
-.layout3{
-        margin:50px 0px;
-        padding: 0px;
-       }
-         /* Layout1 end*/
-.layout4{
-            margin:50px 0px;
-            padding: 0px;
-           }
-             /* Layout1 end*/ 
- .layout5{
-                margin:50px 0px;
-                padding: 0px;
-               }
+
+   .layout2 img{
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+   }
+/* Layout2 end*/ 
+
+ /* Layout3*/
+ .layout3{
+  margin:50px 0px;
+  padding: 0px;
+ }
+
+ .layout3 img{
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .layout3 .new img{
+  width: 680px;
+  height: 710px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+
+
+/* Layout3 end*/
+ /* Layout4*/
+ .layout4{
+  margin:50px 0px;
+  padding: 0px;
+ }
+
+ .layout4 img{
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+/* Layout4 end*/ 
+ /* Layout5*/
+.layout5{
+  margin:50px 0px;
+  padding: 0px;
+ }
+
+ .layout5 img{
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
                
-/* Layout6 end*/ 
+/* Layout5 end*/ 
+ /* Layout6*/
 .layout6{
-      margin:50px 0px;
-     padding: 0px;
-                   }
+  margin:50px 0px;
+  padding: 0px;
+ }
+
+ .layout6 img{
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
  /* Layout6 end*/ 
 
