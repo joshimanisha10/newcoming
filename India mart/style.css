@@ -751,3 +751,91 @@ div {
 
 
 /*------Contact-------*/
+
+	  
+nav > .nav.nav-tabs{
+
+	border: none;
+	  color:#fff;
+	  background:#272e38;
+	  border-radius:0;
+	 width: 100%;
+	
+  
+  }
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+	border: none;
+	  padding: 18px 25px;
+	  color:#fff;
+	  background:#272e38;
+	  border-radius:0;
+  }
+  
+  nav > div a.nav-item.nav-link.active:after
+   {
+	content: "";
+	position: relative;
+	bottom: -60px;
+	left: -10%;
+	border: 15px solid transparent;
+	border-top-color: #146935 ;
+  }
+  .tab-content{
+	background: #fdfdfd;
+	  line-height: 25px;
+	  border: 1px solid #ddd;
+	  border-top:5px solid  #146935;
+	  border-bottom:5px solid #146935;
+	  padding:30px 25px;
+	  width: 100%;
+  }
+  
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+	border: none;
+	  background: #146935;
+	  color:#fff;
+	  border-radius:0;
+	  transition:background 0.20s linear;
+  }
+ .details{
+	
+ }
+ .details h2{
+	font-size: 45px;
+	padding-bottom: 15px;
+}
+.details h5{
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+
+.details a{
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+.details a:hover{
+	color: #146935;
+}
+
+@media (max-width: 600px) {
+	iframe{
+	 width: 450px;
+	 height: 315px;
+	 padding: 0;
+	}
+  }
+
+  @media (max-width: 329px) {
+	iframe{
+	 width: 280px;
+	 height: 280px;
+	 padding: 0;
+	 margin: 0;
+	}
+  }
+  
+
