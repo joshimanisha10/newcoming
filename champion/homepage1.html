@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Champion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+</head>
+<body>
+<!-------------HEADER------------------>
+ <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="logo" style="width:180px;">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="homepage1.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+<!-------------HEADER END------------------>
+
+<section>
+    <div class="conatiner">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="view">
+                 
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                            <ul class="navbar-nav m-auto">
+                              <li class="nav-item active">
+                                <a class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Education" href="#">
+                                    <img src="img/education.png" alt="logo" style="width:40px;">
+                                  </a>
+                              </li> 
+                              <li class="nav-item">
+                                <a class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Personal" href="#">
+                                    <img src="img/perosnal.png" alt="logo" style="width:40px;">
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Social" href="#">
+                                    <img src="img/social.png" alt="logo" style="width:40px;">
+                                  </a>
+                              <li class="nav-item">
+                                <a class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Informative" href="#">
+                                    <img src="img/info.png" alt="logo" style="width:40px;">
+                                  </a>
+                              </li>
+                            </ul>
+                         
+                      </nav>
+                </div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section>
+    <div class="conatiner">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+
+              
+        <div class="card social-timeline-card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Share your insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="images-tab" data-toggle="tab" role="tab" aria-controls="images" aria-selected="false" href="#images">Share Images</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                        <div class="form-group">
+                            <label class="sr-only" for="message">post</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="What are you thinking?"></textarea>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Upload image</label>
+                            </div>
+                        </div>
+                        <div class="py-4"></div>
+                    </div>
+                </div>
+                <div class="btn-toolbar justify-content-between ">
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-theme-primary text-white">share</button>
+                    </div>
+                    <div class="btn-group text-white">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-globe"></i>
+                        </button>
+                        <div class="dropdown-menu " aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#"><i class="fa fa-globe"></i> Public</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-users"></i> Friends</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Just me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Post /////-->
+        <!--- \\\\\\\Post-->
+        <div class="card social-timeline-card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="mr-2">
+                            <img class="rounded-circle" width="45" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                        </div>
+                        <div class="ml-2">
+                            <div class="h5 m-0 text-blue">@JaneSmith</div>
+                            <div class="h7 text-muted">Miracles Lee Cross</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop11">
+                                <div class="h6 dropdown-header">Configuration</div>
+                                <a class="dropdown-item" href="#">Save</a>
+                                <a class="dropdown-item" href="#">Hide</a>
+                                <a class="dropdown-item" href="#">Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                <a class="card-link" href="#">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adip.</h5>
+                </a>
+                <img src="img/gallery/1a.jpg" alt="" class="img-fluid">
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+            </div>
+        </div>
+        <!-- Post /////-->
+        <!--- \\\\\\\Post-->
+        <div class="card social-timeline-card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="mr-2">
+                            <img class="rounded-circle" width="45" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+                        </div>
+                        <div class="ml-2">
+                            <div class="h5 m-0 text-blue">@JaneSmith</div>
+                            <div class="h7 text-muted">Miracles Lee Cross</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                <div class="h6 dropdown-header">Configuration</div>
+                                <a class="dropdown-item" href="#">Save</a>
+                                <a class="dropdown-item" href="#">Hide</a>
+                                <a class="dropdown-item" href="#">Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> 10 min ago</div>
+                <a class="card-link" href="#">
+                    <h5 class="card-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur
+                                    deserunt illo esse distinctio.</h5>
+                </a>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis nihil, aliquam est, voluptates officiis iure soluta alias vel odit, placeat reiciendis ut libero! Quas aliquid natus cumque quae repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, excepturi. Doloremque, reprehenderit! Quos in maiores, soluta doloremque molestiae reiciendis libero expedita assumenda fuga quae. Consectetur id molestias itaque facere? Hic!
+                </p>
+                <div>
+                    <span class="badge badge-primary">JavaScript</span>
+                    <span class="badge badge-primary">Android</span>
+                    <span class="badge badge-primary">PHP</span>
+                    <span class="badge badge-primary">Node.js</span>
+                    <span class="badge badge-primary">Ruby</span>
+                    <span class="badge badge-primary">Paython</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+            </div>
+        </div>
+        <!-- Post /////-->
+        <!--- \\\\\\\Post-->
+        <div class="card social-timeline-card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="mr-2">
+                            <img class="rounded-circle" width="45" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                        </div>
+                        <div class="ml-2">
+                            <div class="h5 m-0 text-blue">@JaneSmith</div>
+                            <div class="h7 text-muted">Miracles Lee Cross</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop2">
+                                <div class="h6 dropdown-header">Configuration</div>
+                                <a class="dropdown-item" href="#">Save</a>
+                                <a class="dropdown-item" href="#">Hide</a>
+                                <a class="dropdown-item" href="#">Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> Hace 40 min</div>
+                <a class="card-link" href="#">
+                    <h5 class="card-title">Totam non adipisci hic! Possimus ducimus amet, dolores illo ipsum quos
+                                    cum.</h5>
+                </a>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sunt fugit reprehenderit consectetur exercitationem odio, quam nobis? Officiis, similique, harum voluptate, facilis voluptas pariatur dolorum tempora sapiente eius maxime quaerat.
+                    <a href="https://mega.nz/#!1J01nRIb!lMZ4B_DR2UWi9SRQK5TTzU1PmQpDtbZkMZjAIbv97hU" target="_blank">https://mega.nz/#!1J01nRIb!lMZ4B_DR2UWi9SRQK5TTzU1PmQpDtbZkMZjAIbv97hU</a>
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+            </div>
+        </div>
+        <!-- Post /////-->
+                </div>
+                </div>
+                </div>
+                </section>
+
+
+<!-------------Footer-------------------->
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 item text">
+                    <h3>BBBootstrap.com</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a></div>
+            </div>
+            <p class="copyright">BBBootstrap.com © 2020</p>
+        </div>
+    </footer>
+</div>  
+<!-------------Footer-------------------->
+
+
+
+
+</body>
+
+</html>

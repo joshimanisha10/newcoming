@@ -566,5 +566,47 @@ margin-left: 50px;
 }
 /* About
 ---------------------*/
+/* Viewprofile
+---------------------*/
+.view .navbar{
+  background-color: #343A40 !important;
+  
+}
+.view .navbar .nav-link{
 
+  color: #fff;
+ }
+
+ .view .navbar .btn{
+
+  color: #fff;
+ }
+.view .navbar .nav-link:hover{
+  background-color: #146935!important;
+  color: #fff !important;
+}
+
+@media (max-width:400px) {
+  .view .navbar ul{
+ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .view .navbar li{
+    float: left;
+    
+  
+  }
+  .view .navbar a{
+    display: block;;
+  
+  }
+}
+
+
+/* Viewprofile
+---------------------*/
 
