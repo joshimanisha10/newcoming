@@ -41,115 +41,470 @@
       </nav>
     </header>
 <!-------------HEADER END------------------>
-    <!-- Edit -->
-    <div class="container" style="background-color: #f5f5f5; margin-bottom: 50px;">
-        <div class="row">
-            <div class="col-12">
-           
-    <div id="edit" class="tab-pane">
 
-        <form class="form-horizontal padding-10" method="get">
-            <h4 class="mb-4 mt-3">Personal Information</h4>
-            <fieldset>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="profileFirstName">First Name</label>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control" id="profileFirstName">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="profileLastName">Last Name</label>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control" id="profileLastName">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="profileAddress">Number</label>
-                    <div class="col-md-8">
-                        <input type="number" class="form-control" id="profileAddress">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="profileCompany">Email</label>
-                    <div class="col-md-8">
-                        <input type="email" class="form-control" id="profileCompany">
-                    </div>
-                </div>
-            </fieldset>
+ 
 
-            <hr>
+ 
+<div id="accordion">
+    <div class="card">
+      <div class="card-header text-center">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Basic Information
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show " data-parent="#accordion">
+        <div class="container">
+          
+            <form action="/action_page.php">
+                <div class="form-group mt-2">
+                    <label for="email">First Name:</label>
+                    <input type="text" class="form-control" id="text" placeholder="First Name" name="first name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Last Name:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Last Name" name="last name">
+                  </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Number:</label>
+                <input type="number" class="form-control" id="number" placeholder="Number" name="pwd">
+              </div>
+              <label for="cars" class="form-group">Birthday: </label>
+              <select name="cars" id="cars">
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="opel">3</option>
+                <option value="audi">4</option>
+              </select>
+              <select name="cars" id="cars">
+                <option value="volvo">Jan</option>
+                <option value="saab">Feb</option>
+                <option value="opel">Mar</option>
+                <option value="audi">April</option>
+              </select>
+              <select name="cars" id="cars">
+                <option value="volvo">1992</option>
+                <option value="saab">1993</option>
+                <option value="opel">1994</option>
+                <option value="audi">1995</option>
+              </select>
 
-            <h4>About</h4>
-            <fieldset>
-                <div class="form-group">
-                    <label class="col-xs-3 control-label">Public Profile</label>
-                    <div class="col-md-8">
-                        <label class="checkbox">
-                            <input type="checkbox" value="1" checked="checked" id="profilePublic">
-                            <i></i> Checkbox 1
+<form action="/action_page.php">
+    <p class="form-group">Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+   
+              <div class="form-group">
+                <div class="sky-form mt-2">
+                    <label class="col-xs-12 control-label">Profile Image</label>
+                    <div class="col-md-12">
+                        <label for="file" class="input input-file">
+                            <div class="button">
+                                <input class="btn btn-primary" type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">
+                            </div>
+                           
                         </label>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="profileBio">About</label>
-                    <div class="col-md-8">
-                        <textarea class="form-control" rows="3" id="profileBio"></textarea>
-                    </div>
+            </div>
+              
+            </form>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-center">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+            Achievements
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="container">
+          
+            <form action="/action_page.php">
+                <div class="form-group mt-2">
+                    <label for="email">Achievement Name:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Achievement Name" name="first name">
+                  </div>
+                  <div class="form-group">
+                    <label for="comment">Achievement Description:</label>
+                    <textarea class="form-control" rows="2" id="comment" width="400px"></textarea>
+                  </div>
+                  <div class="form-group">
+                  <label for="birthday">Achievement Date:</label>
+                  <input class="form-control" type="date" id="birthday" name="birthday">
                 </div>
-                <div class="form-group">
-                    <div class="sky-form">
-                        <label class="col-xs-3 control-label">Profile Image</label>
-                        <div class="col-md-8">
-                            <label for="file" class="input input-file">
-                                <div class="button">
-                                    <input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Browse
-                                </div>
-                                <input type="text" readonly="">
-                            </label>
-                            <a href="#" class="btn btn-danger btn-xs nomargin"><i class="fa fa-times"></i> Remove Current Image</a>
+                
+                
+                </form>
+                  </div>
+      </div>
+    </div>
+  
+    <div class="card">
+        <div class="card-header text-center">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+              Additional Information
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <div class="container">
+            
+              <form action="/action_page.php" class="form-group">
+                <label for="text" class="mt-3">Favorite Sport  </label>
+                <div class="checkbox">
+                    <label><input type="checkbox" value=""> Cricket</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value=""> Football</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value=""> Kick boxing</label>
+                  </div>
+                  
+
+                
+                  <div class="form-group">
+                    <label for="email">Role Model:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Role Model" name="Role Model">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Excercise Hours:</label>
+                    <input type="number" class="form-control" id="number" placeholder="Excercise Hours" name="pwd">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Favorite Excercise:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Favorite Excercise" name="Role Model">
+                  </div>
+                  <label for="cars">Diet Preference: </label>
+                  <select name="cars" id="cars">
+                    <option value="volvo">Vegetarian</option>
+                    <option value="saab">Non-Vegetarian</option>
+                  </select>
+                  <div class="form-group">
+                    <label for="email">Favorite Cheat Meal:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Favorite Cheat Meal" name="Role Model">
+                  </div>
+                  <label for="cars">Relationship Status: </label>
+                  <select name="cars" id="cars">
+                    <option value="volvo">Married</option>
+                    <option value="saab">Single</option>
+                  </select>
+                  <div class="form-group">
+                    <label for="email">Best Achievement:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Best Achievement" name="Role Model">
+                  </div>
+                  </form>\
+                  <div class="form-group">
+                    <label for="comment">About:</label>
+                    <textarea class="form-control" rows="2" id="comment" width="400px"></textarea>
+                  </div>
+                    </div>
+                   
+                    
+  
+  
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header text-center">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+            Characteristics
+        </a>
+        </div>
+        <div id="collapseFour" class="collapse" data-parent="#accordion">
+          <div class="container">
+            
+              <form action="/action_page.php">
+                  <div class="form-group mt-2">
+                 
+                    <div class="row mb-2">
+  
+                     
+                      <div class="col-md-4 form-group required">
+                        <label for="name" class="control-label">Height(in cm)</label>
+                        <input type="number" id="name" class="form-control py-2">
+                      </div>
+                      <div class="col-md-4 form-group required">
+                        <label for="name" class="control-label">Weight(in cm)</label>
+                        <input type="number" id="name" class="form-control py-2">
+                      </div>
+                      <div class="col-md-4 form-group required">
+                        <label for="name" class="control-label">BMI</label>
+                        <input type="number" id="name" class="form-control py-2">
+                      </div>
+                    </div>
+                    </div>
+                    <div class="form-group mt-2">
+                      
+                        <div class="row mb-2">
+      
+                         
+                          <div class="col-md-6 form-group required">
+                            <label for="name" class="control-label">Muscle Mass</label>
+                            <input type="number" id="name" class="form-control py-2">
+                          </div>
+                          <div class="col-md-6 form-group required">
+                            <label for="name" class="control-label">Fat Percentage</label>
+                            <input type="number" id="name" class="form-control py-2">
+                          </div>
+                          
+                        </div>
+                        </div>
+                   
+                  
+                  
+                  </form>
+                    </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header text-center">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+            Injuries
+        </a>
+        </div>
+        <div id="collapseFive" class="collapse" data-parent="#accordion">
+          <div class="container">
+            
+              <form action="/action_page.php">
+              
+                  <div class="form-group mt-2">
+                      <label for="email">Injury Name:</label>
+                      <input type="text" class="form-control" id="text" placeholder="Injury Name" name="first name">
+                    </div>
+                    <div class="form-group ">
+                      <label for="comment">Injury Description:</label>
+                      <textarea class="form-control" rows="2" id="comment" width="400px"></textarea>
+                    </div>
+                    <div class="form-group">
+                    <label for="birthday">Injury Date:</label>
+                    <input class="form-control" type="date" id="birthday" name="birthday">
+                  </div>
+                </div>
+                  
+                  
+                  </form>
+                    </div>
+        </div>
+   
+      
+
+      
+      <div class="card">
+        <div class="card-header text-center">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+            Social Media
+        </a>
+        </div>
+        <div id="collapseSix" class="collapse" data-parent="#accordion">
+          <div class="container">
+            
+              <form action="/action_page.php "class="form-group">
+                <label for="text" class="mt-3">   Social Media  </label>
+                <div class="row mb-2  mt-2">
+                    
+               
+                    
+                    <div class="form-group col-md-4 mt-2">
+                    <div class="checkbox">
+                       
+                        <label><input type="checkbox" value=""> Instagram</label>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-4 mt-2">
+                      <div class="checkbox">
+                        <label><input type="checkbox" value="">Facebook</label>
+                      </div>
+                    </div>
+                      <div class="form-group col-md-4 mt-2">
+                      <div class="checkbox">
+                        <label><input type="checkbox" value=""> Twitter</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  </form>
+                    </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header text-center">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+           Sports 
+        </a>
+        </div>
+        <div id="collapseSeven" class="collapse" data-parent="#accordion">
+          <div class="container">
+            
+              <form action="/action_page.php" class="form-group">
+                <label for="text" class="mt-3">   
+Sports   </label>
+                <div class="row mb-2  mt-2" >
+                    
+               
+                    
+                    <div class="form-group col-md-2 mt-2">
+                        <img src="img/batball.jpg" alt="" width="55px"> <br>
+                        <label for="">Cricket</label>
+                    <div class="checkbox" style="margin-left: 20px;">
+                       
+                        <label><input type="checkbox" value=""> </label>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-2 mt-2">
+                        <img src="img/graduate.png" alt="" width="55px"> <br>
+                        <label for="">Basketball</label>
+                    <div class="checkbox" style="margin-left: 20px;">
+                       
+                        <label><input type="checkbox" value=""> </label>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-2 mt-2">
+                        <img src="img/graduate.png" alt="" width="55px"> <br>
+                        <label for="">Kabaddi</label>
+                    <div class="checkbox" style="margin-left: 20px;">
+                       
+                        <label><input type="checkbox" value=""> </label>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-2 mt-2">
+                        <img src="img/graduate.png" alt="" width="55px"> <br>
+                        <label for="">Rifle-Shooting</label>
+                    <div class="checkbox" style="margin-left: 20px;">
+                       
+                        <label><input type="checkbox" value=""> </label>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-2 mt-2">
+                        <img src="img/graduate.png" alt="" width="55px"> <br>
+                        <label for="">Football</label>
+                    <div class="checkbox" style="margin-left: 20px;">
+                       
+                        <label><input type="checkbox" value=""> </label>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-2 mt-2">
+                        <img src="img/graduate.png" alt="" width="55px"> <br>
+                        <label for="">Kick Boxing</label>
+                    <div class="checkbox" style="margin-left: 20px;">
+                       
+                        <label><input type="checkbox" value=""> </label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  </form>
+                    </div>
+        </div>
+      </div>
+
+
+            
+      <div class="card">
+        <div class="card-header text-center">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+            User Verification
+        </a>
+        </div>
+        <div id="collapseEight" class="collapse" data-parent="#accordion">
+          <div class="container">
+            
+              <form action="/action_page.php">
+                <div class="row mb-2  mt-2">
+                    
+                    <div class="form-group">
+                        <div class="sky-form mt-2">
+                            <label class="col-xs-12 control-label">Certification</label>
+                            <div class="col-md-12">
+                                <label for="file" class="input input-file">
+                                    <div class="button">
+                                        <input class="btn btn-primary" type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">
+                                    </div>
+                                   
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-            </fieldset>
-
-            <hr>
-
-            <h4>Change Password</h4>
-            <fieldset class="mb-xl">
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="profileNewPassword">New Password</label>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control" id="profileNewPassword">
+                    <div class="form-group">
+                        <div class="sky-form mt-2">
+                            <label class="col-xs-12 control-label">Degree </label>
+                            <div class="col-md-12">
+                                <label for="file" class="input input-file">
+                                    <div class="button">
+                                        <input class="btn btn-primary" type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">
+                                    </div>
+                                   
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label" for="profileNewPasswordRepeat">Repeat New Password</label>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control" id="profileNewPasswordRepeat">
+                    
+                  
+                  
+                  
+                  </form>
                     </div>
-                </div>
-            </fieldset>
+        </div>
+      </div>
 
-            <div class="row mb-5">
-                <div class="col-md-9 col-md-offset-3">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-default text-white">Reset</button>
-                </div>
-            </div>
+      
+            
+      <div class="card">
+        <div class="card-header text-center">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+            Workplace
+        </a>
+        </div>
+        <div id="collapseNine" class="collapse" data-parent="#accordion">
+          <div class="container">
+            
+              <form action="/action_page.php">
+                <div class="row mb-2  mt-3">
+                    
+               
+                    <div class="form-group col-md-12">
+                        <label for="email">Workplace Name:</label>
+                        <input type="text" class="form-control" id="text" placeholder="Workplace Name" name="first name">
+                      </div>
+                   
+               
+                  
+                  
+                  <div class="form-group  col-md-6">
+                    <label for="birthday">Start Date:</label>
+                    <input class="form-control" type="date" id="birthday" name="birthday">
+                  </div>
+                  <div class="form-group  col-md-6">
+                    <label for="birthday">End Date:</label>
+                    <input class="form-control" type="date" id="birthday" name="birthday">
+                  </div>
 
-        </form>
+                  <div class="form-group col-md-12">
+                    <label for="email">Workplace Position:</label>
+                    <input type="text" class="form-control" id="text" placeholder="Workplace Position" name="first name">
+                  </div>
+              </div>
+            
+                  </form>
+                    </div>
+        </div>
+      </div>
 
-    </div>
-</div>
-</div>
 
-</div><!-- /COL 2 -->
-     
+  </div>
 </div>
-</div>
-</div>
+    
+
 
 <!-------------Footer-------------------->
 

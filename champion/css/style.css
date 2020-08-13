@@ -18,8 +18,6 @@ body, html {
 .nav-link:hover {
 
  color: #146935 !important;
- 
- 
 }
 /*------search------*/
 .searchh{
@@ -610,3 +608,74 @@ margin-left: 50px;
 /* Viewprofile
 ---------------------*/
 
+.form-wrap {
+	position: relative;
+	margin-bottom: 3em;
+	z-index: 2;
+	padding: 20px;
+	background: #fff !important;
+	-webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2);
+	margin-top: 50px;
+  }
+
+  @media (min-width: 768px) {
+	.form-wrap {
+	  padding: 50px;
+	}
+  }
+  .comment-form-wrap {
+	clear: both;
+  }
+
+  .form-wrap1 {
+	position: relative;
+	margin-bottom: 3em;
+	z-index: 2;
+	padding: 20px;
+	background: #fff !important;
+	-webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2);
+	
+  }
+
+  @media (min-width: 768px) {
+	.form-wrap1 {
+	  padding: 50px;
+	}
+  }
+  .comment-form-wrap1 {
+	clear: both;
+  }
+  .site-section {
+	padding: 5em 0;
+  }
+	  
+
+
+/* Viewprofile
+---------------------*/
+
+
+/* Editprofile
+---------------------*/
+#accordion .card-header{
+  background-image: linear-gradient( -90deg, #D0F8D0, #83EE84, #29E129); 
+ 
+}
+#accordion .card-header:hover{
+  background-image: linear-gradient( -90deg, #D0F8D0, #4AE849, #1D671C); 
+ 
+}
+#accordion .card-link{
+ 
+  color: #000!important;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#accordion .form-group{
+  font-weight: 500;
+}
+/* Editprofile
+---------------------*/
