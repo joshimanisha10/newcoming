@@ -157,16 +157,14 @@
           <div class="container">
             
               <form action="/action_page.php" class="form-group">
-                <label for="text" class="mt-3">Favorite Sport  </label>
-                <div class="checkbox">
-                    <label><input type="checkbox" value=""> Cricket</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" value=""> Football</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" value=""> Kick boxing</label>
-                  </div>
+               
+                  <label for="cars" class="mt-3">Favorite Sport : </label>
+                  <select name="cars" id="cars">
+                    <option value="">Select your favorite Sport</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="saab">Football</option>
+                    <option value="saab">Kick boxing</option>
+                  </select>
                   
 
                 
@@ -288,7 +286,7 @@
                     <label for="birthday">Injury Date:</label>
                     <input class="form-control" type="date" id="birthday" name="birthday">
                   </div>
-                </div>
+            
                   
                 <input type="Submit" value="Submit" class="btn-dark rounded py-2 px-5 mb-5"> 
                   </form>
