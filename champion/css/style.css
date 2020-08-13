@@ -28,11 +28,11 @@ body, html {
   border: none;
 }
 
-.btn{
+.searchh .btn{
   background-color: #146935!important;
 }
 
-.btn:hover{
+.searchh .btn:hover{
   background-color: #000!important;
 }
 .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
@@ -40,6 +40,7 @@ body, html {
   outline: none;
   box-shadow: none;
 }
+
 
 /*------search------*/
 
@@ -679,3 +680,27 @@ margin-left: 50px;
 }
 /* Editprofile
 ---------------------*/
+
+.achieve{
+  border: 3px solid#F0F2F5;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
