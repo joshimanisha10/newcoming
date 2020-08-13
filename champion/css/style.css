@@ -28,11 +28,11 @@ body, html {
   border: none;
 }
 
-.searchh .btn{
+.btn{
   background-color: #146935!important;
 }
 
-.searchh .btn:hover{
+.btn:hover{
   background-color: #000!important;
 }
 .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
