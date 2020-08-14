@@ -467,6 +467,12 @@ margin-left: 50px;
 margin-left: 50px;
 }
 
+
+.basi{
+  border: 3px solid #F0F2F5;
+  padding: 10px 20px;
+}
+
 /* viewprofile
 -------------------------------------------------- */
 
@@ -704,3 +710,7 @@ margin-left: 50px;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+
